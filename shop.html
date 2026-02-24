@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SpiritualWears - Shop</title>
+    <link rel="stylesheet" href="SpiritualWears.css">
+    <script src="cart.js"></script>
+</head>
+<body>
+
+<header>
+    <h1>SpiritualWears</h1>
+    <nav>
+        <a href="SpiritualWears.html">Home</a>
+        <a href="shop.html">Shop</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<section class="products">
+    <h2>Our Products</h2>
+
+    <div class="product">
+        <img src="Mahadev.png" alt="Black T-Shirt">
+        <h3>Black Mahadev T-shirt</h3>
+        <p>₹499</p>
+
+        <select id="size">
+            <option value="">Select Size</option>
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+            <option value="XL">XL</option>
+        </select>
+
+        <input type="number" id="quantity" value="1" min="1">
+
+        <button onclick="addToCart()">Add to Cart</button>
+    </div>
+
+    <div class="product">
+        <img src="Adventure.png" alt="Black T-Shirt">
+        <h3>The Adventure T-shirt</h3>
+        <p>₹499</p>
+
+        <select id="size">
+            <option value="">Select Size</option>
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+            <option value="XL">XL</option>
+        </select>
+
+        <input type="number" id="quantity" value="1" min="1">
+
+        <button onclick="addToCart()">Add to Cart</button>
+    </div>
+
+    <div class="product">
+        <img src="SummerVibes.png" alt="Black T-Shirt">
+        <h3>Black T-Shirt</h3>
+        <p>₹499</p>
+
+        <select id="size">
+            <option value="">Select Size</option>
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+            <option value="XL">XL</option>
+        </select>
+
+        <input type="number" id="quantity" value="1" min="1">
+
+        <button onclick="addToCart()">Add to Cart</button>
+    </div>
+
+    <div class="product">
+        <img src="Quote - 1.png" alt="Black T-Shirt">
+        <h3>T-Shirt with Quote</h3>
+        <p>₹499</p>
+
+        <select id="size">
+            <option value="">Select Size</option>
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+            <option value="XL">XL</option>
+        </select>
+
+        <input type="number" id="quantity" value="1" min="1">
+
+        <button onclick="addToCart()">Add to Cart</button>
+    </div>
+
+    <div class="product">
+        <img src="Quote - 2.png" alt="Black T-Shirt">
+        <h3>T-Shirt with Quote</h3>
+        <p>₹499</p>
+
+        <select id="size">
+            <option value="">Select Size</option>
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+            <option value="XL">XL</option>
+        </select>
+
+        <input type="number" id="quantity" value="1" min="1">
+
+        <button onclick="addToCart()">Add to Cart</button>
+    </div>
+
+    <div class="product">
+        <img src="Quote - 3.png" alt="Black T-Shirt">
+        <h3>T-Shirt with Quote</h3>
+        <p>₹499</p>
+
+        <select id="size">
+            <option value="">Select Size</option>
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+            <option value="XL">XL</option>
+        </select>
+
+        <input type="number" id="quantity" value="1" min="1">
+
+        <button onclick="addToCart()">Add to Cart</button>
+    </div>
+
+    <div class="product">
+        <img src="Quote - 4.png" alt="Black T-Shirt">
+        <h3>T-Shirt with Quote</h3>
+        <p>₹499</p>
+
+        <select id="size">
+            <option value="">Select Size</option>
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+            <option value="XL">XL</option>
+        </select>
+
+        <input type="number" id="quantity" value="1" min="1">
+
+        <button onclick="addToCart()">Add to Cart</button>
+    </div>
+    
+</section>
+
+<!-- Cart Section -->
+
+<section class="cart">
+    <h2>Your Cart</h2>
+    <ul id="cartItems"></ul>
+    <h3>Total: ₹<span id="totalPrice">0</span></h3>
+    <button onclick="checkout()">Checkout on WhatsApp</button>
+</section>
+
+<footer>
+    <p>© 2026 SpiritualWears. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>

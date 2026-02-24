@@ -1,0 +1,320 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Body */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(-45deg, #000000, #1f1f1f, #3a3a3a, #111111);
+    background-size: 400% 400%;
+    animation: gradientMove 8s ease infinite;
+    color: white;
+}
+
+@keyframes gradientMove {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Header */
+header {
+    background-color: #000;
+    color: #fff;
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 24px;
+    letter-spacing: 2px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 16px;
+}
+
+nav a:hover {
+    color: #f4b400;
+}
+
+/* Hero Section */
+.hero {
+    height: 80vh;
+    background: linear-gradient(to right, #000, #333);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.hero button {
+    padding: 12px 25px;
+    border: none;
+    background-color: #f4b400;
+    color: #000;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.hero button:hover {
+    background-color: #fff;
+}
+
+/* Products Section */
+.products {
+    padding: 50px 40px;
+    text-align: center;
+}
+
+.products h2 {
+    margin-bottom: 30px;
+    font-size: 32px;
+}
+
+.product {
+    background-color: rgb(0, 0, 0);
+    padding: 20px;
+    margin: 15px;
+    display: inline-block;
+    width: 250px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.product:hover {
+    transform: translateY(-10px);
+}
+
+.product img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.product h3 {
+    margin: 10px 0;
+}
+
+.product p {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.product button {
+    padding: 8px 15px;
+    border: none;
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.product button:hover {
+    background-color: #f4b400;
+    color: #000;
+}
+
+/* Footer */
+footer {
+    background-color: #000;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+    }
+
+    nav {
+        margin-top: 10px;
+    }
+
+    .hero h2 {
+        font-size: 32px;
+    }
+
+    .product {
+        width: 90%;
+    }
+}
+
+/* Size Dropdown */
+.product select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border-radius: 6px;
+}
+
+/* Cart Section */
+.cart {
+    padding: 60px 40px;
+    background-color: #fff;
+}
+
+.cart h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.cart ul {
+    list-style: none;
+    max-width: 400px;
+    margin: auto;
+}
+
+.cart li {
+    background: #f4f4f4;
+    padding: 10px;
+    margin: 8px 0;
+    border-radius: 6px;
+}
+
+.product input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border-radius: 6px;
+}
+
+.cart {
+    padding: 60px 40px;
+    background: #fff;
+}
+
+.cart button {
+    background: black;
+    color: white;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.cart button:hover {
+    background: #f4b400;
+    color: black;
+}
+
+*/shop
+
+.product input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border-radius: 6px;
+}
+
+.cart {
+    padding: 60px 40px;
+    background: #fff;
+}
+
+.cart button {
+    background: black;
+    color: white;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.cart button:hover {
+    background: #f4b400;
+    color: black;
+}
+
+/* Contact Section */
+.contact {
+    padding: 80px 40px;
+    text-align: center;
+    background-color: #f8f8f8;
+}
+
+.contact h2 {
+    font-size: 34px;
+    margin-bottom: 30px;
+}
+
+.contact p {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+/* Contact Form (Optional - If You Add Form) */
+.contact form {
+    max-width: 500px;
+    margin: 30px auto;
+}
+
+.contact input,
+.contact textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+.contact button {
+    background: black;
+    color: white;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.contact button:hover {
+    background: #f4b400;
+    color: black;
+}
+
+/* About Section */
+.about {
+    padding: 80px 40px;
+    text-align: center;
+    background-color: white;
+}
+
+.about h2 {
+    font-size: 34px;
+    margin-bottom: 25px;
+}
+
+.about p {
+    max-width: 700px;
+    margin: auto;
+    line-height: 1.8;
+    font-size: 18px;
+    color: #555;
+}
+
